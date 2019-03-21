@@ -1,0 +1,16 @@
+
+
+{{movie.id}}<br>
+{{movie.name}}<br>
+{{movie.actor}}<br>
+{{movie.actress}}<br>
+
+
+<!---- This is for showing the name of song for the movie ---->
+<ul>
+	{% for a in movie.song_set.all %}
+	
+	<li> {{a.song_title}}</li>
+
+	{% endfor %}
+</ul>

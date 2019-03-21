@@ -1,0 +1,7 @@
+<!--- this is movie---- template ------ movie ----- index.html file ----->
+
+<ul>
+	{% for movie in all_movies %}
+	<li><a href="/movie/{{movie.id}}">{{movie.name}}</a></li>
+	{% endfor %}
+</ul>

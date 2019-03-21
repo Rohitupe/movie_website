@@ -1,0 +1,11 @@
+this file contains two html file which are "index.html" and "detail.html"
+
+index.html =====> this file contains the name of movie,actor,actress in the index page
+
+
+detail.html ======> this file contains the name,id,actor,actress of the movie we are also showing the name of the song here
+
+there is some changes in models.py]
+
+
+and we used the render in the views.py file

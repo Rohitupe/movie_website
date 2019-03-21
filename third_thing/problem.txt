@@ -1,0 +1,13 @@
+
+
+go to the admin ---> add some hindis or movies ------> then check it by '/movie'
+
+then------> click on the generated link on the movie web page ----> it will show you the detail id for the respective mvie
+
+
+but there is one problem is that ------> while seraching for id if you enter '/movie/45' then it will not show any error -----> even if
+
+there is no movie with id 45
+
+
+the error is solved in fourth thing

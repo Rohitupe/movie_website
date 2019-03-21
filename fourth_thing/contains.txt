@@ -1,0 +1,8 @@
+
+
+this  file contains another tech niques for showing the detail for the movie id
+
+there are two technique which are
+
+1) by render
+2) by loader
