@@ -1,0 +1,80 @@
+<!----added the whole html code in one file----->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+{% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'movie/style.css' %}" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	<!-----header---->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="{% url 'movie:index' %}">TeamLabs</a>
+	</div>
+	<!-----<div class="pull-right">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bottomNavBar">
+		</button>
+		<a class="navbar-brand" href="{% url 'movie:index' %}">Logout</a>
+	</div>--->
+	<!----items--->
+	<div class="collapse navbar-collapse" id="topNavBar">
+		<ul class="nav navbar-nav">
+			<li class="">
+				<a href="{% url 'movie:index' %}">
+					<span class= aria-hidden="true"></span>&nbsp; Movies
+				</a>
+			</li>
+			<li class="">
+				<a href="{% url 'movie:index' %}">
+					<span class= aria-hidden="true"></span>&nbsp; Songs
+				</a>
+			</li>
+			<li class="">
+				<a href="{% url 'movie:index' %}">
+					<span class= aria-hidden="true"></span>&nbsp; Addmovie
+				</a>
+			</li>
+			<!----<li class="">
+				<a href="{% url 'movie:index' %}">
+					<span class= aria-hidden="true"></span>&nbsp; Logout
+				</a>
+			</li>--->
+		</ul>
+		<ul class="nav navbar-nav navbar-right" data-toggle="collapse" data-target="topNavBar">
+			<li class="">
+				<a href="{% url 'movie:index' %}">
+					<span class= aria-hidden="true"></span>&nbsp; Logout
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>
+
