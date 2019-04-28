@@ -1,0 +1,11 @@
+<!--- this is movie---- template ------ movie ----- index.html file ----->
+{% extends 'movie/main.html' %}
+
+{% block body %}
+<ul> 
+	{% for movie in all_movies %}
+	<li><h1><a style="color:green" href="{% url 'movie:detail' movie.id %}">{{movie.name}} </a></h1></li>
+	{% endfor %}
+
+</ul>
+{% endblock %}

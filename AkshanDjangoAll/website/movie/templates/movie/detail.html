@@ -1,0 +1,15 @@
+{% extends 'movie/main.html' %}
+{% block title %}Song Details{% endblock %}
+
+
+{% block body %}
+
+{{movie.id}}<br>{{movie.name}}
+	
+<ul>
+
+	{% for a in movie.song_set.all %}
+		<li>{{a.file_type}}<br>{{a.song_title}}</li>
+	{% endfor %}
+</ul>
+{% endblock %}

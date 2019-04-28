@@ -1,0 +1,2 @@
+added the registration page or login page here so user can register with his email id and password
+

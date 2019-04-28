@@ -1,0 +1,1 @@
+had given the add movie function to the user so he can add the movies
